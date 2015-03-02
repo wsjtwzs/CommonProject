@@ -1,0 +1,49 @@
+PODS:
+  - AFNetworking (2.5.1):
+    - AFNetworking/NSURLConnection (= 2.5.1)
+    - AFNetworking/NSURLSession (= 2.5.1)
+    - AFNetworking/Reachability (= 2.5.1)
+    - AFNetworking/Security (= 2.5.1)
+    - AFNetworking/Serialization (= 2.5.1)
+    - AFNetworking/UIKit (= 2.5.1)
+  - AFNetworking/NSURLConnection (2.5.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/NSURLSession (2.5.1):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (2.5.1)
+  - AFNetworking/Security (2.5.1)
+  - AFNetworking/Serialization (2.5.1)
+  - AFNetworking/UIKit (2.5.1):
+    - AFNetworking/NSURLConnection
+    - AFNetworking/NSURLSession
+  - FMDB (2.5):
+    - FMDB/standard (= 2.5)
+  - FMDB/common (2.5)
+  - FMDB/standard (2.5):
+    - FMDB/common
+  - MBProgressHUD (0.9)
+  - NSHash (1.0.1)
+  - NZAlertView (0.0.13):
+    - UIImage-Helpers
+  - UIImage-Helpers (0.0.3)
+
+DEPENDENCIES:
+  - AFNetworking (~> 2.0)
+  - FMDB
+  - MBProgressHUD (~> 0.8)
+  - NSHash (~> 1.0.1)
+  - NZAlertView
+
+SPEC CHECKSUMS:
+  AFNetworking: 8bee59492a6ff15d69130efa4d0dc67e0094a52a
+  FMDB: 0efa188cf0dd1ce82c27a478cd5f5fa245308677
+  MBProgressHUD: 2038dbcf3dce73215abed6001657043d53aa79a8
+  NSHash: 757e3ba784954b730eae472f3f4e12eb79a18d82
+  NZAlertView: 4c2df4a003ea84f3ff1015e3bab78dbdbcca1c1f
+  UIImage-Helpers: 176819cd1a4cb5beaee859f5b92470fb04be92af
+
+COCOAPODS: 0.35.0

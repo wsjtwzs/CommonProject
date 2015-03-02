@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		55EADDB45C64150491F8874A /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = FB124DC07FBB40DD0ACA7BC8 /* libPods.a */; };
 		66EBC7F61AA1B87900136CA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EBC7F51AA1B87900136CA8 /* main.m */; };
 		66EBC7F91AA1B87900136CA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EBC7F81AA1B87900136CA8 /* AppDelegate.m */; };
 		66EBC7FC1AA1B87900136CA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EBC7FB1AA1B87900136CA8 /* ViewController.m */; };
@@ -14,6 +15,9 @@
 		66EBC8011AA1B87900136CA8 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 66EBC8001AA1B87900136CA8 /* Images.xcassets */; };
 		66EBC8041AA1B87900136CA8 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 66EBC8021AA1B87900136CA8 /* LaunchScreen.xib */; };
 		66EBC8101AA1B87900136CA8 /* CommonProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EBC80F1AA1B87900136CA8 /* CommonProjectTests.m */; };
+		66EBC8291AA30D3500136CA8 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = 66EBC8261AA30D3500136CA8 /* README.md */; };
+		66EBC82A1AA30D3500136CA8 /* RFJModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EBC8281AA30D3500136CA8 /* RFJModel.m */; };
+		66EBC82E1AA4799E00136CA8 /* iConsole.m in Sources */ = {isa = PBXBuildFile; fileRef = 66EBC82D1AA4799E00136CA8 /* iConsole.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +44,14 @@
 		66EBC8091AA1B87900136CA8 /* CommonProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CommonProjectTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		66EBC80E1AA1B87900136CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		66EBC80F1AA1B87900136CA8 /* CommonProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CommonProjectTests.m; sourceTree = "<group>"; };
+		66EBC8261AA30D3500136CA8 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		66EBC8271AA30D3500136CA8 /* RFJModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RFJModel.h; sourceTree = "<group>"; };
+		66EBC8281AA30D3500136CA8 /* RFJModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RFJModel.m; sourceTree = "<group>"; };
+		66EBC82C1AA4799E00136CA8 /* iConsole.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iConsole.h; sourceTree = "<group>"; };
+		66EBC82D1AA4799E00136CA8 /* iConsole.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = iConsole.m; sourceTree = "<group>"; };
+		D575D2132EEF2436E3F53849 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
+		D7B412E3E24DD179A4B5291C /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		FB124DC07FBB40DD0ACA7BC8 /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				55EADDB45C64150491F8874A /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -60,12 +73,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3ABE80E0C097E5381F4F5A11 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				D575D2132EEF2436E3F53849 /* Pods.debug.xcconfig */,
+				D7B412E3E24DD179A4B5291C /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4259563530DD1386F6CAA355 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				FB124DC07FBB40DD0ACA7BC8 /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		66EBC7E71AA1B87900136CA8 = {
 			isa = PBXGroup;
 			children = (
+				66EBC8191AA1BBDD00136CA8 /* Application */,
+				66EBC81A1AA1BBDD00136CA8 /* UI */,
+				66EBC81B1AA1BBDD00136CA8 /* CoreServices */,
+				66EBC81C1AA1BBDD00136CA8 /* Foundamental */,
+				66EBC8231AA1BBDD00136CA8 /* Libraries */,
+				66EBC8241AA1BBDD00136CA8 /* Resource */,
 				66EBC7F21AA1B87900136CA8 /* CommonProject */,
 				66EBC80C1AA1B87900136CA8 /* CommonProjectTests */,
 				66EBC7F11AA1B87900136CA8 /* Products */,
+				3ABE80E0C097E5381F4F5A11 /* Pods */,
+				4259563530DD1386F6CAA355 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -119,6 +157,117 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		66EBC8191AA1BBDD00136CA8 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		66EBC81A1AA1BBDD00136CA8 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		66EBC81B1AA1BBDD00136CA8 /* CoreServices */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CoreServices;
+			sourceTree = "<group>";
+		};
+		66EBC81C1AA1BBDD00136CA8 /* Foundamental */ = {
+			isa = PBXGroup;
+			children = (
+				66EBC81D1AA1BBDD00136CA8 /* Defines */,
+				66EBC81E1AA1BBDD00136CA8 /* Extensions */,
+				66EBC81F1AA1BBDD00136CA8 /* Net */,
+				66EBC8201AA1BBDD00136CA8 /* Protocols */,
+				66EBC8211AA1BBDD00136CA8 /* RootObjects */,
+				66EBC8221AA1BBDD00136CA8 /* Tools */,
+			);
+			path = Foundamental;
+			sourceTree = "<group>";
+		};
+		66EBC81D1AA1BBDD00136CA8 /* Defines */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Defines;
+			sourceTree = "<group>";
+		};
+		66EBC81E1AA1BBDD00136CA8 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		66EBC81F1AA1BBDD00136CA8 /* Net */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Net;
+			sourceTree = "<group>";
+		};
+		66EBC8201AA1BBDD00136CA8 /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		66EBC8211AA1BBDD00136CA8 /* RootObjects */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = RootObjects;
+			sourceTree = "<group>";
+		};
+		66EBC8221AA1BBDD00136CA8 /* Tools */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tools;
+			sourceTree = "<group>";
+		};
+		66EBC8231AA1BBDD00136CA8 /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				66EBC82B1AA4799E00136CA8 /* iConsole */,
+				66EBC8251AA30D3500136CA8 /* RFJModel */,
+			);
+			path = Libraries;
+			sourceTree = "<group>";
+		};
+		66EBC8241AA1BBDD00136CA8 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resource;
+			sourceTree = "<group>";
+		};
+		66EBC8251AA30D3500136CA8 /* RFJModel */ = {
+			isa = PBXGroup;
+			children = (
+				66EBC8261AA30D3500136CA8 /* README.md */,
+				66EBC8271AA30D3500136CA8 /* RFJModel.h */,
+				66EBC8281AA30D3500136CA8 /* RFJModel.m */,
+			);
+			path = RFJModel;
+			sourceTree = "<group>";
+		};
+		66EBC82B1AA4799E00136CA8 /* iConsole */ = {
+			isa = PBXGroup;
+			children = (
+				66EBC82C1AA4799E00136CA8 /* iConsole.h */,
+				66EBC82D1AA4799E00136CA8 /* iConsole.m */,
+			);
+			path = iConsole;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -126,9 +275,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 66EBC8131AA1B87900136CA8 /* Build configuration list for PBXNativeTarget "CommonProject" */;
 			buildPhases = (
+				F46E8486FB0B296A16DD9822 /* Check Pods Manifest.lock */,
 				66EBC7EC1AA1B87900136CA8 /* Sources */,
 				66EBC7ED1AA1B87900136CA8 /* Frameworks */,
 				66EBC7EE1AA1B87900136CA8 /* Resources */,
+				63EDC71AE9914BB4AA04F7B6 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -214,6 +365,39 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		63EDC71AE9914BB4AA04F7B6 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F46E8486FB0B296A16DD9822 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		66EBC7EC1AA1B87900136CA8 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -221,6 +405,9 @@
 			files = (
 				66EBC7FC1AA1B87900136CA8 /* ViewController.m in Sources */,
 				66EBC7F91AA1B87900136CA8 /* AppDelegate.m in Sources */,
+				66EBC82A1AA30D3500136CA8 /* RFJModel.m in Sources */,
+				66EBC82E1AA4799E00136CA8 /* iConsole.m in Sources */,
+				66EBC8291AA30D3500136CA8 /* README.md in Sources */,
 				66EBC7F61AA1B87900136CA8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -341,21 +528,27 @@
 		};
 		66EBC8141AA1B87900136CA8 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D575D2132EEF2436E3F53849 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CommonProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Debug;
 		};
 		66EBC8151AA1B87900136CA8 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D7B412E3E24DD179A4B5291C /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = CommonProject/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "${SRCROOT}/**";
 			};
 			name = Release;
 		};
@@ -412,6 +605,7 @@
 				66EBC8151AA1B87900136CA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		66EBC8161AA1B87900136CA8 /* Build configuration list for PBXNativeTarget "CommonProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +614,7 @@
 				66EBC8181AA1B87900136CA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
