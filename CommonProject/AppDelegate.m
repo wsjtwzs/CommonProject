@@ -7,7 +7,9 @@
 //
 
 #import "AppDelegate.h"
-
+#import "iConsole.h"
+#import "ViewController.h"
+#import "Defines.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +18,14 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+#ifdef _DEBUG
+    _window = [[iConsoleWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+#else
+     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+#endif
+    _window.rootViewController = [[ViewController alloc] init];
+    [_window makeKeyAndVisible];
     return YES;
 }
 
